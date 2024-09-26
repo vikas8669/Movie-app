@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="logo">
+            <div class="container">
+                <p>Bomx~<span>Corn</span></p>
+            </div>
+            <!-- end of logo. -->
+            <!-- searchin coantainer -->
+            <div class="search-container">
+                <div class="search-element">
+                    <h3>Search:</h3>
+                    <input type="text" class="form-control" placeholder="Search Movie Title..." id="movie-search-box"
+                        onkeyup="findMovies()">
+
+                    <div class="search-list" id="search-list">
+                        <!-- <div class="search-list-item">
+                            <div class="search-item-thumbnail">
+                                <img src="medium.jpg" alt="">
+                            </div>
+                            <div class="search-item-info">
+                                <h3>Guardians of the Galaxies vol.2</h3>
+                                <p>2017</p>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+            <!-- end 0f searching -->
+
+            <!-- result container  -->
+            <div class="container">
+                <div class="result-container">
+                    <div class="result-grid" id="result-grid">
+                        <!-- movie-information  -->
+                        <div class="movie-poster">
+                            <img src="medium.jpg" alt="Movie poster">
+                        </div>
+                        <div class="movie-info">
+                            <h3 class="movie-title">Guardians of galaxy vol. 2</h3>
+                            <ul class="movie-music-info">
+                                <li class="year">Year: 2017</li>
+                                <li class="rated">Rating: PG-13</li>
+                                <li class="released">Released: 05 May 2017</li>
+                            </ul>
+                            <p class="genre"><b>Genre:</b> Action, Adventure, Comedy</p>
+                            <p class="writer"><b>Writer:</b> James gunn, Don Abnett, Andy Lannig</p>
+                            <p class="actor"><b>Actor:</b> Chris Pratt, zoe saldana, Dave Bautista</p>
+                            <p class="plot"><b>Plot:</b> The Guardians Struggle to keep together as a team while dealing
+                                whit their personal family issues, notably Star-Lord's ecounter whit his father the
+                                ambitious celestial being Ego.</p>
+                            <p class="language"><b>Language</b> English</p>
+                            <p class="award"><b><i class="fas fa-award "></i></b> Nomination for 1 Oscar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of result container -->
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
